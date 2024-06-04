@@ -26,6 +26,10 @@ return {
     opts = {
       servers = {
         angularls = {},
+        -- Since angular can use html/svg file as the template
+        html = {
+          filetypes = { "html", "templ", "svg" },
+        },
       },
       setup = {
         angularls = function()
